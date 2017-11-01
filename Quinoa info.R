@@ -43,7 +43,11 @@ ggplot() +
   geom_line(data = df_export_peru, 
             aes(x = Year, 
                 y = Value,
-                color = 'Peru'))
+                color = 'Peru')) + 
+  ggtitle("Peru & Bolivia Quinoa Exports") + 
+  labs(x = "Year", 
+        y = "Quinoa Exports in Tonnes", 
+        colour="Country")
 
 ggsave(filename = "export_volume.pdf", width = 10, height = 7.5)
 
