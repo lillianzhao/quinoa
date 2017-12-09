@@ -62,10 +62,10 @@ ggplot() +
             aes(x = Year, 
                 y = avg *1200,
                 color = 'Google Search: Quinoa'))  + 
-  ggtitle("Peru & Bolivia Quinoa Exports") + 
+  ggtitle("Quinoa Exports v. Google Search Hits") + 
   labs(x = "Year", 
        y = "Quinoa Exports in Tonnes", 
-       colour="Country") + 
+       color = "Country") + 
   xlim(2004, 2017)
 
 ggsave(filename = "export v. google.pdf", width = 10, height = 7.5)
